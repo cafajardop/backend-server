@@ -18,7 +18,7 @@ app.get('/:tipo/:img', (req, res, next) => {
         }
 
 
-        res.sendfile(path);
+        res.sendFile(path, { root: '.' })
 
     });
 
